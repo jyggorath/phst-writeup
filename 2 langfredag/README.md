@@ -18,15 +18,19 @@
 >
 >Flaggformat: PHST{noe av interesse}
 
-[Attachment: paskeegg_langfredag.png]()
+[Attachment: paskeegg_langfredag.png](https://github.com/jyggorath/phst-writeup/blob/master/2%20langfredag/paskeegg_langfredag.png)
 
 ## Solution
 ### Not stego
 As the first task turned out to be simple stego, this next one will typically be something completely different. Also, as the image this time seems to have clues and details in it, I decided to not try stego right away, and instead investigate what the image shows visually.
 
 ### Resistor color codes
-The paper in the picture reads "Resistor Color Code". Googling that, I found [this great resource](https://www.electronics-tutorials.ws/resistor/res_2.html)
+The paper in the picture reads "Resistor Color Code". Googling that, I found [this great resource](https://www.electronics-tutorials.ws/resistor/res_2.html).
 
 The eggs in the picture have three colors each, and appearently, the three first colors on a resistor form three digits (cropped image):
 
-![resistorgraph.png]()
+![resistorgraph.png](https://raw.githubusercontent.com/jyggorath/phst-writeup/master/2%20langfredag/resistorgraph.png?token=ABN2A5VWF2GW7RDLFZBIL7K6SG3LY)
+
+Here is the full color table:
+
+![resistorcolortable.png]()
