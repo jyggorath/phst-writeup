@@ -7,3 +7,10 @@
 >Kan du analysere bildet og se om det er noe muffens? 🧁
 >
 >Flaggformat: PHST{muffens}
+
+[Attachment: skjrtorsdag.png](https://raw.githubusercontent.com/jyggorath/phst-writeup/master/skj%C3%A6rtorsdag/skjrtorsdag.png?token=ABN2A5VBBGE3CS4IAZGL62S6SGXFE)
+
+## Solution
+### Stego
+View the file in a text or hex editor. The flag is located at the very end, just before the file trailer.
+![stego]()
