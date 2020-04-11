@@ -33,4 +33,17 @@ The eggs in the picture have three colors each, and appearently, the three first
 
 Here is the full color table:
 
-![resistorcolortable.png]()
+![resistorcolortable.png](https://raw.githubusercontent.com/jyggorath/phst-writeup/master/2%20langfredag/resistorcolortable.png?token=ABN2A5US7KUJZZDJW7UZQ6K6SG3VU)
+
+### ASCII codes
+Using the color codes, we get the following numbers out of the eggs:
+```
+112 052 052 115 107 051
+104 052 114 051 110 033
+```
+
+These aren't byte hexes, but they are all in the range 0-255. Maybe they're ASCII codes? Yes they are:
+
+![ascii.png]()
+
+**The flag is:** `PHST{p44sk3h4r3n!}`
