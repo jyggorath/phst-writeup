@@ -2,6 +2,11 @@
 20 poeng
 
 ### Table of contents
+1. [The Task](#the-task)
+2. [Solution](#solution)
+	1. [Emoji reference](#emoji-reference)
+	2. [DNS](#dns)
+	3. [The hint: DNS LOC](#the-hint-dns-loc)
 
 ## The Task
 >Påskeegg på avveie: PHST har mistanke om at et dusin påskeegg er på avveie. Det er grunn til å mistenke at fremmede makters hackere står bak.
