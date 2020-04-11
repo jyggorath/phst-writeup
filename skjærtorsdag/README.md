@@ -38,7 +38,7 @@ user@host:~/phst$
 ### Caesar cipher
 `CUFG{Qrer_snatre_zrt_nyqev!!}` is clearly a flag, but also clearly scrambled in some way. Let's rule out the simplest solution first.
 
-![caesar.png]()
+![caesar.png](https://raw.githubusercontent.com/jyggorath/phst-writeup/master/skj%C3%A6rtorsdag/caesar.png?token=ABN2A5UV6JZD6IS6IJ55ES26SGZYK)
 
 And what do you know, it was ROT13.
 
