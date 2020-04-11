@@ -14,13 +14,13 @@
 >
 >Flaggformat: PHST{muffens}
 
-[Attachment: skjrtorsdag.png](https://github.com/jyggorath/phst-writeup/blob/master/skj%C3%A6rtorsdag/skjrtorsdag.png)
+[Attachment: skjrtorsdag.png](skjrtorsdag.png)
 
 ## Solution
 ### Stego
 View the file in a text or hex editor. The flag is located at the very end, just before the file trailer.
 
-![stego.png](https://raw.githubusercontent.com/jyggorath/phst-writeup/master/skj%C3%A6rtorsdag/stego.png?token=ABN2A5QSF6CHDJWWN2MURX26SGZIS)
+![stego.png](stego.png?raw=true)
 
 Or you can just `strings` the file, and grep on '{'/'}' (which we know will be in the flag).
 
@@ -38,7 +38,7 @@ user@host:~/phst$
 ### Caesar cipher
 `CUFG{Qrer_snatre_zrt_nyqev!!}` is clearly a flag, but also clearly scrambled in some way. Let's rule out the simplest solution first.
 
-![caesar.png](https://raw.githubusercontent.com/jyggorath/phst-writeup/master/skj%C3%A6rtorsdag/caesar.png?token=ABN2A5RCDBXTN3E4X25GLPC6SGZ6E)
+![caesar.png](caesar.png?raw=true)
 
 And what do you know, it was ROT13.
 

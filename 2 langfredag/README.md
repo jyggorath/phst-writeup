@@ -3,6 +3,10 @@
 
 ### Table of contents
 1. [The Task](#the-task)
+2. [Solution](#solution)
+	1. [Not stego](#not-stego)
+	2. [Resistor color codes](#resistor-color-codes)
+	3. [ASCII codes](#ascii-codes)
 
 ## The Task
 >Bruk av hjemmekontor
@@ -18,7 +22,7 @@
 >
 >Flaggformat: PHST{noe av interesse}
 
-[Attachment: paskeegg_langfredag.png](https://github.com/jyggorath/phst-writeup/blob/master/2%20langfredag/paskeegg_langfredag.png)
+[Attachment: paskeegg_langfredag.png](paskeegg_langfredag.png)
 
 ## Solution
 ### Not stego
@@ -29,11 +33,11 @@ The paper in the picture reads "Resistor Color Code". Googling that, I found [th
 
 The eggs in the picture have three colors each, and appearently, the three first colors on a resistor form three digits (cropped image):
 
-![resistorgraph.png](https://raw.githubusercontent.com/jyggorath/phst-writeup/master/2%20langfredag/resistorgraph.png?token=ABN2A5VWF2GW7RDLFZBIL7K6SG3LY)
+![resistorgraph.png](resistorgraph.png?raw=true)
 
 Here is the full color table:
 
-![resistorcolortable.png](https://raw.githubusercontent.com/jyggorath/phst-writeup/master/2%20langfredag/resistorcolortable.png?token=ABN2A5US7KUJZZDJW7UZQ6K6SG3VU)
+![resistorcolortable.png](resistorcolortable.png?raw=true)
 
 ### ASCII codes
 Using the color codes, we get the following numbers out of the eggs:
@@ -44,6 +48,6 @@ Using the color codes, we get the following numbers out of the eggs:
 
 These aren't byte hexes, but they are all in the range 0-255. Maybe they're ASCII codes? Yes they are:
 
-![ascii.png]()
+![ascii.png](ascii.png?raw=true)
 
 **The flag is:** `PHST{p44sk3h4r3n!}`
