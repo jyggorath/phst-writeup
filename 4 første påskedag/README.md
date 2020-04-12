@@ -2,6 +2,11 @@
 20 points
 
 ### Table of contents
+1. [The Task](#the-task)
+2. [Solution](#solution)
+	1. [The PCAP](#the-pcap)
+	2. [SSL key log](#ssl-key-log)
+	3. [Finding the document](#finding-the-document)
 
 ## The Task
 >Oppdatert påskevurdering: Det er MULIG at det blir en god påske. Situasjonen rundt påskeeggene er fortsatt uavklart. Ytterligere 50 påskeegg er forduftet. I tillegg er Påske HAREN sykemeldt. For å utelukke fjærallergi må PHSTs påskeeggproduksjonsanlegg renses umiddelbart for alle fjær og alle påskekyllingbetjenter bes utøve ekstra renslighet de kommende dagene.
@@ -25,7 +30,7 @@ Looking at the capture data in Wireshark, these are the first early assumptions 
 * The traffic consists mainly of TLS encrypted HTTPS traffic, in addition to "background traffic" (e.g. SSDP, NTP, ARP). Also there's DNS (and MDNS and LLMNR)
 * The external hosts in the HTTPS traffic appears to be linked to Twitter, Google, yr.no and nrk.no.
 
-### SSL key log file
+### SSL key log
 After looking through and filtering out traffic, something stands out. The "main client" has TCP communication with another host in the network, on what appears to be a custom port: 192.168.136.131:31337.
 
 Contrary to the HTTPS traffic, these TCP packets contain plaintext. And *very interesting* plaintext as well:
