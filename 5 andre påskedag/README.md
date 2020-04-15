@@ -9,8 +9,9 @@
 	3. [The magic parts](#the-magic-parts)
 	4. [Other](#other)
 3. [Solution](#solution)
-	1. [Modifications and "debugging"](#modifications-and-debugging)
-	2. [Controlling the flow](#controlling-the-flow)
+	1. [A more elegant solution](#a-more-elegant-solution)
+	2. [Modifications and "debugging"](#modifications-and-debugging)
+	3. [Controlling the flow](#controlling-the-flow)
 
 ## The Task
 >Oppdatert påskevurdering: Det er “sannsynlig” at det blir en god påske. Påske HAREN er friskmeldt.
@@ -188,6 +189,9 @@ elif op == "🌞":
 ```
 
 ## Solution
+### A more elegant solution
+After I first published this writeup, I found the Norwegian developer and security researcher Roy Solberg had [published a writeup as well on his blog](https://blog.roysolberg.com/2020/04/pst-challenge-4). I recommend everyone to check out his solution for this challenge (andre påskedag/Easter Monday), it's a thousand times more elegant than mine.
+
 ### Modifications and "debugging"
 In order to better track the flow in the code, I modified a copy of the script with additional output to be able to view which if-cases where being run in which order, and view the changes to the stack, as well as `sp` and `pc`.
 
