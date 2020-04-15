@@ -31,7 +31,7 @@ As the first task turned out to be simple stego, this next one will typically be
 ### Resistor color codes
 The paper in the picture reads "Resistor Color Code". Googling that, I found [this great resource](https://www.electronics-tutorials.ws/resistor/res_2.html).
 
-The eggs in the picture have three colors each, and appearently, the three first colors on a resistor form three digits (cropped image):
+The eggs in the picture have three colors each, and apparently, the three first colors on a resistor form three digits (cropped image):
 
 ![resistorgraph.png](resistorgraph.png?raw=true)
 

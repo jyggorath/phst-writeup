@@ -37,7 +37,7 @@ Contrary to the HTTPS traffic, these TCP packets contain plaintext. And *very in
 
 ![keytraffic.png](keytraffic.png?raw=true)
 
-The presence of keywords such as CLIENT_HANDSHAKE_TRAFFIC_SECRET peaked my interest. A quick Google search revealed that this is data from [logging of SSL/TLS keys in Chrome/Firefox/cURL](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format).
+The presence of keywords such as CLIENT_HANDSHAKE_TRAFFIC_SECRET piqued my interest. A quick Google search revealed that this is data from [logging of SSL/TLS keys in Chrome/Firefox/cURL](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/Key_Log_Format).
 
 This is what the full TCP stream looks like:
 
@@ -50,9 +50,9 @@ More googling revealed that this information can be used to decrypt the HTTPS tr
 4. Voilà [(screenshot)](howto_decrypt_3.png).
 
 ### Finding the document
-As stated earlier, the HTTPS traffic is primarily to Twitter, Google, yr.no and nrk.no. After decrypting the HTTPS traffic, it is appearent that all this originates from the user visiting and browsing yr.no. The Google traffic is Google search traffic from the autocomplete when he/she first types the address, as well as Google Analytics, and the requests to Twitter and nrk.no are both related to yr.no as well.
+As stated earlier, the HTTPS traffic is primarily to Twitter, Google, yr.no and nrk.no. After decrypting the HTTPS traffic, it is apparent that all this originates from the user visiting and browsing yr.no. The Google traffic is Google search traffic from the autocomplete when he/she first types the address, as well as Google Analytics, and the requests to Twitter and nrk.no are both related to yr.no as well.
 
-Combing through the browsing looking for something that could look like a flag did not imediatly yield any results. When faced with such issues, I have learned to go back and re-read the task description. Doing so, I found the following clue:
+Combing through the browsing looking for something that could look like a flag did not immediately yield any results. When faced with such issues, I have learned to go back and re-read the task description. Doing so, I found the following clue:
 >Flaggformat: PHST{Tittel i dokument}
 *(English: Flag format: PHST{Title in document})*
 
